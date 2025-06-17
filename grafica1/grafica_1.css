@@ -5,27 +5,31 @@
     height: 400px;
     margin: 40px;
     background: #f5f5f5;
-  }
+    }
 
-  .grafico-vertical {
-    display: flex;
-    gap: 20px;
-    width: 500px;
-    height: 300px;
-    border: 2px solid #333;
-    padding: 10px;
-    background: white;
-    align-items: flex-end /* para que las barras estén alineadas abajo */
-  }
+.grafico-vertical {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  width: 500px;
+  height: 300px;
+  margin: 40px auto;
+  padding: 0; /* quitar padding para que no haya espacio entre barras y borde */
+  background: white;
+  border-bottom: 4px solid #000000; /* línea en el piso */
+  box-sizing: border-box; /* para asegurar que el borde no afecte el tamaño total */
+}
 
-  .barra {
-    width: 60px;
-    border-radius: 6px 6px 0 0;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
+.barra {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
 
   .barra:nth-child(1) {
     height: 180px;
@@ -35,7 +39,6 @@
   .barra:nth-child(2) {
     height: 120px;
     background-color: #3498db; /* azul */
-    color: #333;
   }
 
   .barra:nth-child(3) {
@@ -46,7 +49,6 @@
   .barra:nth-child(4) {
     height: 90px;
     background-color: #f1c40f; /* amarillo */
-    color: #333;
   }
 
   .barra:nth-child(5) {
