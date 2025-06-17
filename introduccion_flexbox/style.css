@@ -1,0 +1,59 @@
+.flex-container {
+    display: flex;
+    justify-content: center; /* Alineación horizontal de los elementos */
+    flex-flow: column wrap; /* Dirección de los elementos en fila */
+    border: 1px solid #006b36; /* Borde gris claro */
+    height: 400px;
+    width: 600px;
+    /*gap: 10px; /* Espacio entre los elementos */
+    align-items: st;
+}
+
+.flex-item {
+  padding: 20px; /* Espacio interno */
+  width: 100px; /* Ancho fijo para los elementos */
+  height: 100px; /* Altura fija para los elementos */    
+  border: 1px solid #000000; /* Borde gris claro */
+  color:rgb(184, 23, 23); /* Color del texto */
+}
+
+.flex-item:nth-child(1) {
+  background: #107c02; /* Color de fondo rojo */
+}
+
+.flex-item:nth-child(2) {
+  background: #190686; /* Color de fondo rojo */
+  width: 120px; /* Ancho fijo para el segundo elemento */
+}
+
+.flex-item:nth-child(3) {
+  background: #e62751; /* Color de fondo rojo */
+}
+
+.flex-item:nth-child(4) {
+  background: #b2cf0bc4; /* Color de fondo rojo */
+}
+
+.flex-item:nth-child(5) {
+  background: #f0b2cf; /* Color de fondo rojo */
+}
+
+.flex-item:nth-child(6) {
+  background: #cfb2f0; /* Color de fondo rojo */
+}
+
+.flex-item:nth-child(7) {
+  background: #20b1b1; /* Color de fondo rojo */
+}
+
+.flex-item:nth-child(8) {
+  background: #5f0f0f; /* Color de fondo rojo */
+}
+
+.flex-item:nth-child(9) {
+  background: #fbff02c4; /* Color de fondo rojo */
+}
+
+.flex-item:nth-child(10) {
+  background: #1f81f0; /* Color de fondo rojo */
+}
