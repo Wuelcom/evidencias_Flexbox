@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    padding: 50px;
+    background-color: #a0a0a0;
+}   
+.calendar-container {
+    display: flex;
+    height: 1000px;
+    border:1px soild #000000 dashed;
+    background-color: #cfcece;
+}
+.time-bar {
+    display: flex;
+    flex-direction: column;
+    border-right:1px solid #070707;;
+    padding-top: 40px;
+}
+
+/*selector hijo directo*/
+.time-bar > span {
+    border:dashed 1px #000000;
+    flex-grow: 1;
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: 12px;
+    color:#666;
+}
+
+.week{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;   
+    flex-grow: 1;
+}
+
+.day-column {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #000000;;
+}
+
+.day-header {
+    color: rgb(0, 0, 0);
+    height: 40px;
+    background-color: #0411c4; ;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: #c40404;
+    color: #ffffff;
+}
+.day-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* espacio entre actividades */
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.actividad1L{
+  background-color: #04c484;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 460px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+.actividad2L{
+  background-color: #c40404;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 220px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+.actividad3L{
+  background-color: #c40404;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 140px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+.actividad4L{
+  background-color: #e005e7;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 60px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.actividad1Ma{
+  background-color: #037c54;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 460px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+.actividad2Ma{
+  background-color: #c40404;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 220px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+.actividad3Ma{
+  background-color: #c40404;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 140px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+.actividad4Ma{
+  background-color: #1405e7;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 60px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.actividad1Mi{
+  background-color: #6c8f83;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 460px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.actividad2Mi{
+  background-color: #b7c404;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 220px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.actividad3Mi{
+  background-color: #b7c404;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 140px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.actividad4Mi{
+  background-color: #e005e7;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 60px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.actividad1J{
+  background-color: #1ee90b;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 460px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.actividad2J{
+  background-color: #c40404;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 220px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.actividad3J{
+  background-color: #c40404;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 140px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.actividad4J{
+  background-color: #e005e7;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 60px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.actividad1V{
+  background-color: #1b8012;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 460px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.actividad2V{
+  background-color: #b7c404;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 220px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.actividad3V{
+  background-color: #c40404;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 140px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.actividad4V{
+  background-color: #e005e7;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 60px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.actividad1S{
+  background-color: #cf7602;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 950px; /* puedes ajustar este valor según el espacio disponible */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;    /* vertical */
+  justify-content: center; /* horizontal */
+}
